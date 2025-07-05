@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Estudiantes Nota</title>
+</head>
+<body>
+
+   <section class="titulo">
+      <h1>Registro de Notas</h1>
+   </section> 
+   
+   <section class="datos">
+    <label>Nombre: </label>
+    <input type="text" id="nombre" placeholder="Nombre">
+
+    <label>Apellido:</label>
+    <input type="text" id="apellido" placeholder="Apellido">
+
+
+    <label>Matricula:</label>
+    <input type="text" id="matricula" placeholder="Matricula">
+
+    <label>Nota:</label>
+    <input type="number" id="nota" placeholder="Nota">
+
+         <button class="enviar" type="submit" onclick="AgregarEstudiante()">Agregar +</button>
+
+   </section>
+
+   <section class="conjunto-botones">
+     
+     <label>Matricula:</label>
+     <input type="text" id="matriculaAcciones" placeholder="Matricula">
+     <button class="editar" "submit" onclick="EditarEstudiante()">Editar</button>
+     <button class="buscar"type="submit" onclick="BuscarEstudiante()">Buscar</button>
+     <button  class="eliminar"type="submit" onclick="EliminarEstudiante()">Eliminar</button>
+   </section>
+
+    <section class="titulo-tabla">
+      <h4>Estudiantes Calificados  </h4>
+    </section> 
+
+   <section class="tabla-valores">
+    
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Matricula</th>
+                <th>Nota</th>
+
+            </tr>
+            
+            
+        </thead>
+
+        <tbody>
+    
+        </tbody>
+    </table>
+   </section>
+
+    <script src="Funciones.js"></script>
+</body>
+</html>
